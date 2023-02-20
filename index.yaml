@@ -1,0 +1,27 @@
+apiVersion: v1
+entries:
+  matrix-synapse:
+  - apiVersion: v2
+    appVersion: 1.77.0
+    created: "2023-02-20T02:24:16.616373167Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: ^12.1.4
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: ^17.3.17
+    description: Matrix reference homeserver
+    digest: f7e0c67af77dbb2f0937e5faf8633e1a41d12399a72a9b757a23ece45147a2d7
+    icon: https://matrix.org/images/matrix-logo.svg
+    maintainers:
+    - email: ace@haxalot.com
+      name: Alexander Olofsson
+    name: matrix-synapse
+    type: application
+    urls:
+    - https://github.com/funkypenguin/helm-matrix-synapse/releases/download/matrix-synapse-3.1.0-pre-04/matrix-synapse-3.1.0-pre-04.tgz
+    version: 3.1.0-pre-04
+generated: "2023-02-20T02:24:16.616385668Z"
