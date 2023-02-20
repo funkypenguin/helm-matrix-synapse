@@ -274,9 +274,7 @@ synapse:
   affinity: {}
 
 
-extraContainers:
-- name: david
-  image: batman
+extraContainers: {}
 
 ## Configuration for handling Synapse workers, which are useful for handling
 ## high-load deployments.
